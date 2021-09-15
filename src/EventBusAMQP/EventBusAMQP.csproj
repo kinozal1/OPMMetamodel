@@ -1,13 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
-        <RootNamespace>Agent_Examples</RootNamespace>
-        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <AssemblyName>OPMMetamodel.BuildingBlocks.EventBusAMQP</AssemblyName>
+        <RootNamespace>OPMMetamodel.BuildingBlocks.EventBusAMQP</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="IntegrationEvents\Events" />
+      <ProjectReference Include="..\BuildingBlocks\EventBus\EventBus\EventBus.csproj" />
     </ItemGroup>
 
     <ItemGroup>
